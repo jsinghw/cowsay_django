@@ -8,6 +8,7 @@ from subprocess import run
 
 def index(request):
     html = "index.html"
+    output = ''
 
     if request.method == "POST":
         form = CowsayForm(request.POST)
